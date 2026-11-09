@@ -1,20 +1,78 @@
-# Datasets
-aptos2019-blindness-detection/
-Eye retina Data-1/
-Eye Retina Data-2/
 
-# Python
+# ==============================
+# PYTHON
+# ==============================
 venv/
+.venv/
+env/
 __pycache__/
-*.pyc
-
-# Jupyter
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .ipynb_checkpoints/
 
-# OS
+# ==============================
+# NEXT.JS / NODE
+# ==============================
+node_modules/
+.next/
+out/
+build/
+dist/
+.turbo/
+.vercel/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==============================
+# ENVIRONMENT / SECRETS
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# IDE / OS
+# ==============================
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Secrets
-.env
-*.env
+# ==============================
+# PYTHON / ML TEMPORARY FILES
+# ==============================
+*.log
+*.tmp
+*.temp
+wandb/
+runs/
+lightning_logs/
+
+# ==============================
+# GENERATED OUTPUTS
+# ==============================
+reports/
+generated_reports/
+*.pdf
+
+# ==============================
+# DATASETS / TEST DATA
+# ==============================
+datasets/
+dataset/
+test_images/
+train_images/
+*.zip
+*.rar
+*.7z
+
+# ==============================
+# KEEP REQUIRED MODEL WEIGHTS
+# ==============================
+# models/ is intentionally NOT ignored.
